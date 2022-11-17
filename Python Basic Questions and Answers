@@ -1,0 +1,446 @@
+1.WHAT IS THE DIFFERENCE BETWEEN STRING AND VARIABLE?
+	Anything which is enclosed with single or double quotes are considered as string in python.
+    Eg. 'Hello' , "123","01/01/2010"
+
+	Variable is name assigned to any value.
+	Eg.  a = 'Name', Num = 67
+	here a and Num are variables
+
+
+2.WHAT IS AN EXPRESSION MADE UP OF? WHAT DO ALL EXPRESSIONS DO?
+	An expression is a combination of values, variables, and operators.If we type any expression in command line,
+	interpretor will evalute and displays its values. Expressions will compare or evalute.
+	For example < > <= or + - * / etc
+
+
+3.WHAT IS THE DIFFERENCE BETWEEN AN EXPRESSION AND A STATEMENT?
+	Statements represent an action or command 
+	E.g Print statements print('Good Morning')
+	assignment statements Greet = 'Hi'
+
+	Expression is a combination of variables, operations and values that yields or returns a result or value.
+	Like x = 3+2 which gives 5.
+
+
+4.HOW TO DECLARE VARIABLE IN PYTHON?
+	Variable name in python should start with alphabets or underscore(_) should not begin with numericals.
+
+
+5.CAN WE CONCATINATE STRINGGS AND NUMBERS?
+	No we cannot concatinate strings and numbers it gives you an error,
+	we can se str() function to convert number to string and we can concatinate.
+
+
+6.WHAT ARE THE TWO VALUES OF THE BOOLEAN DATA TYPE? HOW DO YOU WRITE THEM AND HOW TO CHECK ITS TYPE?
+	True and False are two values of boolean and while writing boolean first letter should be uppercase.
+
+	We can check type using following code.
+	print(type(True))
+	print(type(False))
+
+
+7.WHAT ARE THE THREE DIFFERENT TYPES OF BOOLEAN OPERATORS?
+	Three types of boolean are and, or & not
+
+
+8.MAKE A LIST OF EACH BOOLEAN OPERATOR'S TRUTH TABLES?
+		AND
+	>True and True is True
+	>True and False is False
+	>False and True is False
+	>False and False is False
+
+		OR
+	>True or True  is True
+	>True or False is True
+	>False or True is True
+	>False or False is False
+
+		NOT
+	>not True is False
+	>not False is True
+
+
+9.WHAT ARE THE SIX COMPARISON OPERATORS?
+	(equals equals to) == , (not eequals to ) != 
+	(less than) <  , (greater than) >
+	(less than or equals to) <=,  and (greather than or equals to)>= 
+
+10.WHAT IS THE DIFFERENCE BETWEEN THE EQUAL TO AND ASSIGNMENT OPERATORS?
+	== is equal to operator which compares two values and results in boolean 
+	whereas = assignment operator assigns variable a value.
+
+
+11.IF YOUR PROGRAMME IS STUCK IN AN ENDLESS LOOP, WHAT KEYS YOU’LL PRESS?
+We can press CTRL+C to stop the infinite loop.
+
+
+12.What is the difference between break and continue?
+	Break statement is mainly used as exit statement.Which helps in escaping from current loop or block.
+
+	Continue statement helps to jump from current iteration to next iteration.
+
+
+12.In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+	Range(10) it gives elements till 10 ,but does not include upper limit,
+	as we are not mentioning lower limit as by default lower limit will be 0.
+	Step size is not mentioned by deafult argument it will be 1.
+
+	Range(0,10) it gives elements till 10 ,but does not include upper limit. In this we are just mentioning the lower limit.
+	Step size is not mentioned by deafult argument it will be 1.
+
+	Range(0,10,1) it gives elements till 10 ,but does not in clude upper limit.  In this we are mentioning the lower limit and 
+	step size is mentioned  as 1 so it will increase count by one.
+
+
+13.IF YOU HAD A FUNCTION NAMED NEW_FUNCTION() INSIDE A MODULE NAMED TEST, HOW WOULD YOU CALL IT AFTER IMPORTING TEST?
+	It can be called by mentioning module name. function name like
+	test.new_function()
+   
+   
+14.WHAT ARE THE ADVANTAGES IF FUNCTIONS?
+	It helps to divide the large programs into small groups so that we can read the code and debug the program faster and better.
+	Functions stop us from writing the same logic various times. We can bind the logic in one and then call the same over and over.
+	Many persons can work on the same program by assigning different methods to each of them.
+	Overall it will save lot of time and we can reuse.
+ 
+ 
+15.WHAT STATEMENT CREATES A FUNCTION?
+	def (define) statement creates a function.
+	def add(a,b):
+		return a+b
+
+
+16.MENTION TYPES OF SCOPES IN PYTHON?
+	Global function local function
+
+ 
+17.WHAT IS THE CONCEPT OF A RETURN VALUE? IS IT POSSIBLE TO HAVE A RETURN VALUE IN AN EXPRESSION?
+    A function takes arguments and perform some operations and retunrs some value,what operations it should perform is given by return value.
+	As return values are flexible we can have return value in an expression.
+
+
+18.IF A FUNCTION DOES NOT HAVE A RETURN STATEMENT, WHAT IS THE RETURN VALUE OF A CALL TO THAT FUNCTION?
+    Function  will return none value if return statement is not mentioned.
+    
+	
+19.WHAT IS LIST AND MENTION ITS CHARACTERSTICS?
+	Its a data structure in python called as list.It is enclosed by Square Brackets [].
+	It is  in ordered sequence
+	It holds heterogenous data
+	It is mutable
+	E.g. list = [1, 2,'Hi', 'false', True, 12.56, ['helo',4,6],'python']
+
+
+20.IN A LIST OF VALUES STORED IN A VARIABLE CALLED SAMPLE, HOW WOULD YOU ASSIGN THE VALUE 'HELLO' AS THE THIRD VALUE?
+	(Assume [2, 4, 6, 8, 10] are in sample.)
+
+	sample = [2,4,6,8,10]
+	by using insert function we can insert value into the list at particular index, as lists are mutble.
+	sample.insert(2,'hello')
+
+
+21.WHAT IS THE VALUE OF SPAM[INT(INT('3' * 2) / 11)]?
+	spam = ['a','b','c','d']
+
+	First '3' is multiplied by 2 which becomes '33' that will be converted into number using int function
+	then 33 will be divided by 11 so that gives 3.0 as result
+	again 3.0 is converted into integer using second int function which gives 3
+	which ends in locating index at 3 which gives 'd' as output.
+
+	print(spam[int(int('3' * 2) / 11)])
+
+
+22.WHAT IS THE VALUE OF LIST1[-1] AND LIST1[-2]?  LIST1 = ['A','B','C','D']
+	list1 = ['a','b','c','d']
+	list1[-1] results in last element of list from positive indexing which will be 'd'.
+	list1[-2] results in second last element of list from positive indexing which will be'c'
+
+
+23.WHAT IS THE VALUE OF TEST.INDEX('CAT')?  TEST = [3.14, 'CAT', 11, 'CAT', TRUE]
+	test = [3.14, 'cat', 11, 'cat', True]
+	test.index('cat')
+	Value of above code is 1 because .index() always gives first index of elements if the elements are duplicate.
+    
+    
+24.WHAT DOES APPEND  AND REMOVE FUNCTION WILL DO TO A LIST?
+	Append will insert element to the last indexo= of list.
+	Remove will removes the first occurrence of the object from the list.
+
+
+25.WHAT ARE THE LIST CONCATENATION AND LIST REPLICATION OPERATORS?
+	Operator for list concatenation is +  which will add
+	Operator for list replication is * which will multiply
+
+
+26.WHAT IS DIFFERENCE BETWEEN THE LIST METHODS APPEND() AND INSERT()?
+	Append() function inserts element to the last position of the list it takes only argument which needs to be inserted.
+	insert() function inserts element at particular position by taking index number and argument which needs to be inserted.
+ 
+ 
+27.WHAT IS THE DIFFERENCE BETWEEN .POP() AND .REMOVE() IN A LIST?
+	.pop() removes the specific item from list and if we dont provide specific index number last element from the list  will be removed.
+	.remove() removes the first matching value/object. It does not have anything to do with respect to indexing.
+
+
+28.WHAT'S THE DIFFERENCE BETWEEN TUPLES AND LISTS?
+	Lists are mutable 
+	Tuples are immutable
+	Lists has variable length, tuple has fixed length.
+	List has more functionality than the tuple.
+	List are shown by  square brackets[], and tuples are shown by parantheses ()
+ 
+ 
+29.HOW TO CONVERT LIST INTO TUPLE AND VICE VERSA?
+	list(tuple) will convert tuple into list.
+	tuple(list) will convert list into tuple.
+ 
+ 
+30.WHAT IS THE MOST SIGNIFICANT DISTINCTION BETWEEN A DICTIONARY AND A LIST?
+	Dictionary consits of key and value pair but list doesn't. dict1 = {'month':"jan",'Age' : 24}
+	Dictionary can never be accesed by index number but list can,can be accessed by keys
+	List supports concatenation and multiplication but dictionary does not
+ 
+ 
+31.WHAT DO THE ESCAPE CHARACTERS N AND T STAND FOR?
+	n - statement after n will be printed in new line.
+	print("Multiline strings\ncan be created\nusing escape sequences.")
+	--Multiline strings
+	can be created
+	using escape sequences.
+
+
+	t - statement after t will be printed after TAB space
+	print("How's your\tday?")
+	--How's your	day?
+
+
+32.WHAT IS THE WAY TO INCLUDE BACKSLASH CHARACTERS IN A STRING?
+	We have use double backlash to include backlash in strings.
+	print("C:\\Users\\Pat\\Desktop") this results in C:\Users\Pat\Desktop.
+
+
+33.THE STRING "HOWL'S MOVING CASTLE" IS A CORRECT VALUE. WHY ISN'T THE SINGLE QUOTE CHARACTER IN THE WORD HOWL'S NOT ESCAPED A PROBLEM?
+	print("Howl's Moving Castle")
+	Becuase string is enclosed with double quotes so single quote will not create a problem in code.
+ 
+ 
+34.WHAT ARE THE VALUES OF THE FOLLOWING EXPRESSIONS?
+	'Hello'.upper()  string will be converted to upper case so output will be 'HELLO'
+
+	'Hello'.upper().isupper()  it will convert string to upper case and it will check for does string is in uppercase, 
+	so out put will be  True(boolean) 
+
+	'Hello'.upper().lower()  # it will first convert string to upper and then to lower so output is 'hello'
+
+
+35.WHAT ARE THE VALUES OF THE FOLLOWING EXPRESSIONS?
+	'Remember, remember, the fifth of July.'.split()
+	It will separate each word of string and stores it in a list as elements
+
+	'-'.join('There can only one.'.split())
+	It will insert -(dash) after each word of string by default it takes space as argument
+	'There-can-only-one.'
+
+
+36.WHAT ARE THE METHODS FOR RIGHT-JUSTIFYING, LEFT-JUSTIFYING, AND CENTERING A STRING?
+	rstr = 'I love data science'
+	print ("The right aligned string is : ")
+	print (rstr.rjust(25, '+') 
+	we use .rjust to right justifying a string
+
+	print ("The left alligned string is : ")
+	print (rstr.ljust(25,'+'))
+	we use .lust to left justifying a string
+
+	print ("The right aligned string is : ")
+	print (rstr.center(25,'+'))
+	we use center centering a string
+
+	Where 25 is given as width it makes length of string into 25 and allign string asper input.
+	The right aligned string is : 
+	++++++I love data science
+	The left alligned string is : 
+	I love data science++++++
+	The right aligned string is : 
+	+++I love data science+++
+
+
+37.WHAT IS THE BEST WAY TO REMOVE WHITESPACE CHARACTERS FROM THE START OR END?
+	check = '   Hi how are doing.     '
+	check.lstrip() -- removes spaces from left end
+	check.rstrip() -- removes spaces from right end
+	check.strip()  # this removes white spaces from both the ends of a string
+	'Hi how are doing.'
+
+
+38.TO WHAT DOES A RELATIVE PATH REFER?
+	Relative path is current working directory.
+
+  
+39.WHAT DOES AN ABSOLUTE PATH START WITH YOUR OPERATING SYSTEM?
+	Absolute path start with "c:\".
+
+
+40.WHAT DO THE FUNCTIONS OS.GETCWD() AND OS.CHDIR() DO?
+	os.getcwd()   --> this will return the current working directory.
+   
+	os.chdir() --> this will change the current working direcctory.
+ 
+ 
+41.WHAT ARE THE . AND .. FOLDERS?
+	. folder is current working folder , whereas .. folder is root folder.
+ 
+ 
+42.WHAT ARE THE THREE “MODE” ARGUMENTS THAT CAN BE PASSED TO THE OPEN() FUNCTION?
+	'r' read mode where it only reads the document.
+	'w' write mode where it will write data into document if already data exists inside document it will erase and write new  dara
+	'a' append mode where as int his mode it will add data the document without erasing the existing data.
+
+
+43.WHAT HAPPENS IF AN EXISTING FILE IS OPENED IN WRITE MODE?
+	If existing file is opened in writemode then whatever data does it has it will earsed and new data will be inserted into existing file.
+
+
+44.HOW DO YOU TELL THE DIFFERENCE BETWEEN READ() AND READLINES()?
+	In read() mode it will read the data from the starting place of curser and also we can provide from which place it shoud read the data.
+
+	In readlines() mode it will read data of complete line,here also we can pass from which line it should start redaing data.
+
+
+45.WHAT DATA STRUCTURE DOES A SHELF VALUE RESEMBLE?
+	A shelf value resembles a dictionary value; it has keys and values, along with keys() and values() methods that work similarly to the dictionary methods of the same names.   
+  
+  
+46.WHAT ARE THE FIVE LEVELS OF LOGGING?
+	DEBUG,INFO , WARNING, ERROR, CRITICAL
+  
+  
+47.WHAT LINE OF CODE WOULD YOU ADD TO YOUR SOFTWARE TO DISABLE ALL LOGGING MESSAGES?
+	logging.disable(logging.CRITICAL)
+    
+	
+48.WHY IS USING LOGGING MESSAGES BETTER THAN USING PRINT() TO DISPLAY THE SAME MESSAGE?
+	Logging contains readily available diagnostic information such as the file name, full path, function, and line number of the logging  event.
+
+
+49.WHAT ARE THE DIFFERENCES BETWEEN THE STEP OVER, STEP IN, AND STEP OUT BUTTONS IN THE DEBUGGER?
+	The Step button will move the debugger into a function call. 
+    The Over button will quickly execute the function call without stepping into it. 
+    The Out button will quickly execute the rest of the code until it steps out of the function it currently is in.
+    
+	
+50.AFTER YOU CLICK CONTINUE, WHEN WILL THE DEBUGGER STOP ?
+	When you click continue debugger will run till it reaches end of the program and stops.
+
+
+51.WHAT IS THE CONCEPT OF A BREAKPOINT?
+	A breakpoint is a setting on a line of code that causes the debugger to pause when the program execution reaches the line.
+   
+   
+52.IN WHAT MODES SHOULD THE PDFFILEREADER() AND PDFFILEWRITER() FILE OBJECTS WILL BE OPENED?
+	Read-binary ('rb') for PdfFileReader() and write-binary ('wb') for PdfFileWriter()
+
+
+53.FROM A PDFFILEREADER OBJECT, HOW DO YOU GET A PAGE OBJECT FOR PAGE 5?
+	Calling getPage(4) will return a Page object for About this Book, since page 0 is the first page.
+
+
+54.WHAT PDFFILEREADER VARIABLE STORES THE NUMBER OF PAGES IN THE PDF DOCUMENT?
+	Numpages will store number of pages in the pdf document.
+
+
+55.IF A PDFFILEREADER OBJECT’S PDF IS ENCRYPTED WITH THE PASSWORD SWORDFISH, WHAT MUST YOU DO BEFORE YOU CAN OBTAIN PAGE OBJECTS FROM IT?
+	Call decrypt('swordfish')
+
+
+56.WHAT METHODS DO YOU USE TO ROTATE A PAGE?
+	We will use the  rotate.Clockwise() method of a PDF object
+
+
+57.WHAT IS THE DIFFERENCE BETWEEN A RUN OBJECT AND A PARAGRAPH OBJECT?
+	A Run object is a contiguous run of text with the same style.
+	Paragraph objects contains a list of one or more Run objects.
+
+
+58.WHAT TYPE OF OBJECT HAS BOLD, UNDERLINE, ITALIC, STRIKE, AND OUTLINE VARIABLES?
+	Paragraph objects has bold, underline,italic, strike amd outline variable.
+	
+	
+59.WHAT IS THE DIFFERENCE BETWEEN FALSE, TRUE, AND NONE FOR THE BOLD VARIABLE?
+	True (the attribute is always enabled, no matter what other styles are applied to the run),
+	False (the attribute is always disabled), or 
+	None (defaults to whatever the run’s style is set to).
+
+
+60.HOW DO YOU CREATE A DOCUMENT OBJECT FOR A NEW WORD DOCUMENT?
+	Call docx.Document() to return a new, blank Word Document object. 
+	
+	
+61.HOW DO YOU ADD A PARAGRAPH WITH THE TEXT "HELLO, THERE!"; TO A DOCUMENT OBJECT STORED IN AVARIABLE NAMED DOC?
+	doc.add_paragraph('Hello ,There!') will add a paragraph to the document
+	
+	
+62.WHAT INTEGERS REPRESENT THE LEVELS OF HEADINGS AVAILABLE IN WORD DOCUMENTS?
+	To add_heading() are a string of the heading text and an integer from 0 to 4. 
+  
+63.WHAT ARE FUNCTION ANNOTATIONS AND HOW THEY ARE USED?
+	Function annotations are arbitrary python expressions that are associated with various part of functions.
+	These expressions are evaluated at compile time and have no life in python’s runtime environment
+
+	The benefits from function annotations can only be reaped via third party libraries. The type of benefits depends upon the type of the library
+
+    #Annotations for simple parameters
+    #Annotations for excess parameters 
+    #Annotations for nested parameters 
+    #Annotations for return type
+
+
+64.WHAT ARE RECURSIVE FUNCTIONS, AND HOW ARE THEY USED?
+	Recursive Function in Python is used for repetitively calling the same function until the loop reaches the desired value.
+	During the program execution by using the divide and conquer logic
+	Recursive functions make the code look clean and elegant.
+	A complex task can be broken down into simpler sub-problems using recursion.
+	Sequence generation is easier with recursion than using some nested iteration.
+
+
+65.WHAT ARE SOME GENERAL DESIGN GUIDELINES FOR CODING FUNCTIONS?
+    Limited use of globals
+    Standard headers for different modules
+    Naming conventions for local variable,global variable, constants and functions
+    proper indention
+    Avoid using a coding style that is too difficult to understand
+    Length of functions should not be very large
+  
+  
+66.WHAT IS THE RELATIONSHIP BETWEEN GENERATORS AND ITERATORS?
+	An iterator is an object which contains a countable number of values and it is used to iterate over iterable objects like list, tuples,     sets, etc.
+	iter() keyword is used to create an iterator containing an iterable object.
+	next() keyword is used to call the next element in the iterable object.
+	Class is used to implement an iterator
+	Local Variables aren’t used here. 
+	Every iterator is not a generator.
+  
+  
+67.WHAT ARE THE SIGNS THAT A FUNCTION IS A GENERATOR FUNCTION?
+	Here, the yield function returns the data without affecting or exiting the function. 
+	It will return a sequence of data in an iterable format where we need to iterate over the sequence to use the data.
+
+
+68.WHAT IS THE PURPOSE OF A YIELD STATEMENT?
+	It will return a sequence of data in an iterable format where we need to iterate over the sequence to use the data 
+	is used to return from a function without destroying the states of its local variable and when the function is called, the execution
+	starts from the last yield statement.
+
+
+69.WHAT IS THE RELATIONSHIP BETWEEN MAP CALLS AND LIST COMPREHENSIONS? MAKE A COMPARISON AND CONTRAST BETWEEN THE TWO.
+	When we want to compute this function for different values in a single line of code . This is where map() function plays its role !
+	List Comprehension is a substitute for the lambda function, map(), filter() and reduce(). It follows the form of the mathematical        	 set-builder notation. It provide a concise way to create lists.
+
+	List comprehension is more concise and easier to read as compared to map.
+	List comprehension allows filtering. In map, we have no such facility. For example, to print all even numbers in range of 100, we can        
+	write [n for n in range(100) if n%2 == 0]. There is no alternate for it in map
+	List comprehension are used when a list of results is required as map only returns a map object and does not return any list.
+	List comprehension is faster than map when we need to evaluate expressions that are too long or complicated to express
+	Map is faster in case of calling an already defined function (as no lambda is required)
+   
